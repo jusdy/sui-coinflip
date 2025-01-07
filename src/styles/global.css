@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('./button.css');
+
+@font-face {
+  font-family: 'Symtext';
+  src: url('../assets/fonts/Symtext/Symtext.ttf');
+}
+
+body {
+  font-family: 'Symtext';
+  @apply bg-primary-palette uppercase;
+}
+
+.container {
+  @apply mx-auto max-w-[1600px] px-5;
+}
+
+.trans {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.content p {
+  @apply my-6;
+}
+
+.content ul {
+  @apply my-6;
+}
+
+.anim {
+  @apply transition-all duration-200 ease-in-out;
+}
